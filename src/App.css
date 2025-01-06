@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crete+Round:ital@0;1&family=Goblin+One&family=Mitr:wght@200;300;400;500;600;700&family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crete+Round:ital@0;1&family=Goblin+One&family=Mitr:wght@200;300;400;500;600;700&family=New+Rocker&family=Yatra+One&display=swap');
+@import './Components/DemonPage.css';

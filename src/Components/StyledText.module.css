@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crete+Round:ital@0;1&family=Goblin+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mitr:wght@200;300;400;500;600;700&family=New+Rocker&family=Ruwudu:wght@400;500;600;700&family=Yatra+One&display=swap");
+
+.container {
+    position: relative; /* ทำให้ข้อความและเงาอยู่ในตำแหน่งเดียวกัน */
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .shadow {
+    position: absolute; /* วางเงาไว้ใต้ข้อความ */
+    top: 0;
+    left: 0;
+    font-family: "New Rocker", serif;
+    font-weight: bold;
+    font-size: 7vw;
+    color: white; /* สีของเงา */
+    text-transform: uppercase;
+    text-shadow: 7px 6px 5px rgba(186, 43, 43, 0.8); /* เงา */
+    z-index: 1; /* อยู่ข้างหลังข้อความ */
+  }
+  
+  .text {
+    position: relative; /* วางข้อความไว้เหนือเงา */
+    font-family: "New Rocker", serif;
+    font-weight: bold;
+    font-size: 7vw;
+    color: transparent; /* ทำให้ข้อความโปร่งใส */
+    text-transform: uppercase;
+    -webkit-background-clip: text; /* รองรับ Chrome, Safari */
+    background-clip: text;
+    background-image: url("https://i.pinimg.com/736x/8f/65/b8/8f65b8e4e23d0c226879f27e668c6134.jpg"); /* ใส่ภาพที่ต้องการ */
+    background-size: cover;
+    background-position: center;
+    z-index: 2; /* อยู่ข้างบน */
+  }
+  
+
+/*  */
+
+/* .shadow {
+  text-shadow: 3px 3px 5px;
+  opacity: ;
+} */

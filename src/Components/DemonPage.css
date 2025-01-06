@@ -1,0 +1,49 @@
+.card-container {
+  position: relative;
+  width: 200px; /* ปรับขนาดตามต้องการ */
+  height: 350px; /* ปรับขนาดตามต้องการ */
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px  rgb(166, 165, 158);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image,
+.foreground-image {
+  position: absolute;
+  width: 350px;
+  height: 295px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out, opacity 0.5s ease-in-out, filter 0.8s ease-in-out; /* ความลื่นไหลของแอนิเมชัน */
+  margin-top: 15px;
+}
+
+.background-image {
+  opacity: 1; /* แสดงภาพแรก */
+  transform: scale(1); /* ขนาดเริ่มต้น */
+  filter: blur(0px); /* ไม่มีเบลอ */
+}
+
+.foreground-image {
+  z-index: 1; /* เลเยอร์ของภาพที่สอง */
+  opacity: 0; /* ซ่อนภาพที่สอง */
+  transform: scale(0.9); /* ทำให้เล็กกว่าภาพแรกเล็กน้อย */
+}
+
+.card-container:hover .background-image {
+  transform: scale(1); /* ภาพแรกยังคงอยู่ */
+  opacity: 0.5; /* ทำให้จางลง */
+  filter: blur(200px); /* เพิ่มเบลอ */
+}
+
+.card-container:hover .foreground-image {
+  opacity: 1; /* แสดงภาพที่สองเมื่อชี้ */
+  transform: scale(1); /* ขยายภาพให้ขนาดเท่ากับภาพแรก */
+}
+
+
