@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DemonSlayerApiResponse, Character } from "../Model/DisneyModel";
+import { DemonSlayerApiResponse, Character } from "../Model/DemonModel";
 import axios, { AxiosResponse } from "axios";
 
 function Home() {
