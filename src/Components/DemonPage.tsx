@@ -56,7 +56,6 @@ function DemonPage() {
   const [totalPages, setTotalPages] = useState<number>(1); // จำนวนหน้าทั้งหมด
   const [isLoading, setIsLoading] = useState<boolean>(false); // สถานะการโหลด
 
-  // เพิ่ม foregroundstyle ให้กับตัวละครแต่ละตัว
   const backgroundImages: { [key: number]: string } = {
     1: Tanjiro1,
     2: nezuko,
