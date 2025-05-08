@@ -197,11 +197,11 @@ function DemonPage() {
                   </p>
                   <p>
                     <strong className="text-lg ml-4">Description: </strong>
-                    {character.description || "ไม่มีข้อมูล"}
+                    {character.description}
                   </p>
                   <p>
                     <strong className="text-lg">Quote: </strong>
-                    {character.quote || "ไม่มีข้อมูล"}
+                    {character.quote}
                   </p>
                 </div>
               </div>
